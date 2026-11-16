@@ -1,0 +1,8 @@
+@media (max-width:991px){
+  .burger{display:flex}
+  .nav-links{position:fixed;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg2);border-bottom:1px solid var(--bd);max-height:0;overflow:hidden;transition:max-height .4s}
+  .nav-links.open{max-height:480px}.nav-links a{display:block;padding:.9rem 1.5rem}
+  .section{padding:4rem 0}
+}
+@media (max-width:575px){.btn-x{width:100%;text-align:center}.timeline{padding-left:1.2rem}.t-dot{left:calc(-1.2rem - 8px)}}
+@media (hover:none){.tilt{transform:none!important}}

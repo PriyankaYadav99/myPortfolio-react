@@ -1,0 +1,21 @@
+@keyframes float{0%,100%{translate:0 0}50%{translate:0 -14px}}
+@keyframes spin{to{transform:rotateX(360deg) rotateY(360deg)}}
+@keyframes gradmove{0%{background-position:0 50%}100%{background-position:200% 50%}}
+@keyframes twinkle{0%,100%{opacity:.15}50%{opacity:.9}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+@keyframes rot{to{transform:rotate(360deg)}}
+@keyframes chIn{to{opacity:1;transform:none}}
+@keyframes blink{50%{border-color:transparent}}
+@keyframes marq{to{transform:translateX(-50%)}}
+@keyframes fade{from{opacity:0}}
+@keyframes pop{from{opacity:0;transform:scale(.94) translateY(20px)}}
+@media (prefers-reduced-motion:reduce){.ch{opacity:1;transform:none}.track{animation:none}}
+@keyframes sweep{0%,55%{transform:translateX(-120%)}85%,100%{transform:translateX(120%)}}
+@keyframes typeln{0%{width:0}18%,88%{width:100%}100%{width:0}}
+@keyframes orb{to{transform:rotateX(72deg) rotateZ(360deg)}}
+@keyframes ping{70%{box-shadow:0 0 0 9px rgba(52,211,153,0)}100%{box-shadow:0 0 0 0 rgba(52,211,153,0)}}
+@keyframes wheel{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(12px)}}
+@media (prefers-reduced-motion:reduce){.screen code{width:100%}.rig{transform:rotateX(8deg) rotateY(-10deg)}}
