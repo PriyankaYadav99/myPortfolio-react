@@ -10,7 +10,7 @@ export default function Projects() {
   return (
     <section id="projects" className="section">
       <div className="container">
-        <Reveal><p className="eyebrow">Selected work</p><h2>Websites I've Worked On</h2><p className="muted project-intro">A selection of live websites across agency, non-profit, healthcare and digital-platform work. Open each website to explore it.</p></Reveal>
+        <Reveal><p className="eyebrow">My Contributions</p><h2>Websites I've Worked On</h2><p className="muted project-intro">A selection of live websites across agency, non-profit, healthcare and digital-platform work. Open each website to explore it.</p></Reveal>
         <div className="filters" aria-label="Filter projects">
           {filters.map(item => <button key={item} type="button" aria-pressed={filter === item} className={filter === item ? 'on' : ''} onClick={() => setFilter(item)}>{item}</button>)}
         </div>

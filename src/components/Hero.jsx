@@ -78,6 +78,9 @@ export default function Hero() {
             <div className="d-flex flex-wrap gap-3 mt-4">
               <a href="#projects" className="btn-x primary magnetic">Explore My Work</a>
               <a href="#contact" className="btn-x ghost magnetic">Let's Work Together</a>
+              <a href="/resume.pdf" download="Priyanka_Yadav_Resume.pdf" className="btn-x primary">
+                Download Resume ↓
+              </a>
             </div>
           </div>
           <div className="col-lg-6 col-md-10 mx-auto"><Scene3D /></div>
