@@ -3,8 +3,8 @@ import { links } from '../data.js';
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState('');
-  const [light, setLight] = useState(false);
-  useEffect(() => { document.documentElement.dataset.theme = light ? 'light' : 'dark'; }, [light]);
+  const [light, setLight] = useState(() => { try { return localStorage.getItem('portfolio-theme') === 'light'; } catch { return false; } });
+  useEffect(() => { document.documentElement.dataset.theme = light ? 'light' : 'dark'; try { localStorage.setItem('portfolio-theme', light ? 'light' : 'dark'); } catch {} }, [light]);
   useEffect(() => {
     const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && setActive(e.target.id)), { rootMargin: '-45% 0px -50% 0px' });
     links.forEach(([id]) => { const el = document.getElementById(id); el && io.observe(el); });
